@@ -11,11 +11,21 @@ print(f"""Here is your list:
 
 C = []
 
-if len(max(B)) == 0:
+if len(B) == 0:
     print("your list is empty")
-else:
-    for word in B:
-        if word not in C:
-            C.append(word)
-print(f"""Here is the shortened version of your list:
+else: 
+    if len(max(B)) == 0:
+        print("your list is empty")
+    else:
+        for word in B:
+            if word not in C:
+                C.append(word)
+
+if len(C) == 0:
+    D = 2
+else: 
+    if len(max(C)) == 0:
+        G = 3
+    else:
+        print(f"""Here is the shortened version of your list:
 {C}""")

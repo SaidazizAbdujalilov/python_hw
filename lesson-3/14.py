@@ -1,5 +1,4 @@
-#Sort List: Create a new list that contains the elements of the original list in sorted order.
-
+#Check for Empty List: Determine if a list is empty and return a boolean.
 B = []
 while True:
     A = (input("Write something from your list or write 'stop()' to finish the list: ")).strip()
@@ -10,9 +9,9 @@ print(f"""Here is your list:
 {B}""")
 
 if len(B) == 0:
-    print("your list is empty")
-else: 
-    if len(max(B)) == 0:
-        print("your list is empty")
+    print(bool(0))
+else:
+    if len(max(B)):
+        print(bool(0))
     else:
-        print(sorted(B))
+        print(bool(0))

@@ -8,9 +8,12 @@ while True:
 print(f"""Here is your list:
 {B}""")
 
-if len(max(B)) == 0:
+if len(B) == 0:
     print("your list is empty")
-else:
-    C = input("Write the element you want to find from the list: ")
-    D = B.index(C) +1 
-    print(f"your element is {D}th")
+else: 
+    if len(max(B)) == 0:
+        print("your list is empty")
+    else:
+        C = input("Write the element you want to find from the list: ")
+        D = B.index(C) +1 
+        print(f"your element is {D}th")

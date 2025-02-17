@@ -8,16 +8,19 @@ while True:
 print(f"""Here is your list:
 {B}""")
 
-if len(max(B)) == 0:
+if len(B) == 0:
     print("your list is empty")
-else:
-    C = input("Write the thing that you want to insert: ")
-    D = input(f""""{C}" should come after (write "idk" if you do not know): """).strip()
-    if D.lower() == "idk":
-     E = int(input(f""""{C}" shall come at which position? Write an integer: """)) - 1
-     B.insert(E,C)
-     print(B)
-    else: 
-       F = B.index(D) + 1
-       B.insert(F,C)
-       print(B)
+else: 
+    if len(max(B)) == 0:
+        print("your list is empty")
+    else:
+       C = input("Write the thing that you want to insert: ")
+       D = input(f""""{C}" should come after (write "idk" if you do not know): """).strip()
+       if D.lower() == "idk":
+          E = int(input(f""""{C}" shall come at which position? Write an integer: """)) - 1
+          B.insert(E,C)
+          print(B)
+       else: 
+          F = B.index(D) + 1
+          B.insert(F,C)
+          print(B)

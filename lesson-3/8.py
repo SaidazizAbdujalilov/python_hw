@@ -9,12 +9,15 @@ while True:
 print(f"""Here is your list:
 {B}""")
 
-if len(max(B)) == 0:
+if len(B) == 0:
     print("your list is empty")
-else:
-    if len(B) >= 3:
-        C = [B[0],B[1],B[2]]
+else: 
+    if len(max(B)) == 0:
+        print("your list is empty")
     else:
-        print("Your list has less than 3 items")
-print(f"""Here are the first 3 items in your list:
+        if len(B) >= 3:
+            C = [B[0],B[1],B[2]]
+            print(f"""Here are the first 3 items in your list:
 {C}""")
+        else:
+            print("Your list has less than 3 items")
