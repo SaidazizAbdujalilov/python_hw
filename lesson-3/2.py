@@ -8,4 +8,10 @@ while True:
 print(f"""Here is your list:
 {B}""")
 
-print(sum(B))
+if len(B) == 0:
+    print("your list is empty")
+else: 
+    if len(max(B)) == 0:
+     print("your list is empty")
+    else:
+     print(sum(B))

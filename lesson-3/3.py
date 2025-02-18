@@ -30,7 +30,10 @@ print(f"""Here is your list:
 {B}""")
 
 
-if len(max(B)) == 0:
-     print("your list is empty")
+if len(B) == 0:
+    print("your list is empty")
 else: 
-    print(max(B))
+    if len(max(B)) == 0:
+     print("your list is empty")
+    else:
+     print(max(B))

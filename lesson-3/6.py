@@ -9,7 +9,10 @@ while True:
 print(f"""Here is your list:
 {B}""")
 
-if len(max(B)) == 0:
+if len(B) == 0:
     print("your list is empty")
-else:
-    print(B[0])
+else: 
+    if len(max(B)) == 0:
+     print("your list is empty")
+    else:
+     print(B[0])

@@ -9,8 +9,14 @@ while True:
 print(f"""Here is your list:
 {B}""")
 
-C = input("Which item's presence would you like to check? ")
-if C in B:
-    print(f"Yes, {C} is present in your list")
-else:
-    print(f"No, {C} is not present in your list")
+if len(B) == 0:
+    print("your list is empty")
+else: 
+    if len(max(B)) == 0:
+     print("your list is empty")
+    else:
+     C = input("Which item's presence would you like to check? ")
+     if C in B:
+       print(f"Yes, {C} is present in your list")
+     else:
+       print(f"No, {C} is not present in your list")

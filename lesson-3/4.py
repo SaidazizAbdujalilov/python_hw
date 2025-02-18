@@ -8,7 +8,10 @@ while True:
 print(f"""Here is your list:
 {B}""")
 
-if len(max(B)) == 0:
-     print("your list is empty")
+if len(B) == 0:
+    print("your list is empty")
 else: 
-    print(min(B))
+    if len(max(B)) == 0:
+     print("your list is empty")
+    else:
+     print(min(B))

@@ -9,9 +9,15 @@ while True:
 print(f"""Here is your list:
 {B}""")
 
-C = input("Enter an item to be counted in your list: ")
-D = 0
-for word in B:
-    if word == C:
-     D += 1
-print(f"The number of '{C}'s in your list is {D}")
+if len(B) == 0:
+    print("your list is empty")
+else: 
+    if len(max(B)) == 0:
+     print("your list is empty")
+    else:
+     C = input("Enter an item to be counted in your list: ")
+     D = 0
+     for word in B:
+      if word == C:
+       D += 1
+       print(f"The number of '{C}'s in your list is {D}")
