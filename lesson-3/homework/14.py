@@ -11,7 +11,7 @@ print(f"""Here is your list:
 if len(B) == 0:
     print(bool(0))
 else:
-    if len(max(B)):
+    if len(max(B)) == 0:
         print(bool(0))
     else:
         print(bool(0))
