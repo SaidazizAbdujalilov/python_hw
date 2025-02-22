@@ -1,4 +1,4 @@
-#Find Maximum of Sublist: Given a list, find the maximum element of a specified sublist.
+#Find Minimum of Sublist: Given a list, find the minimum element of a specified sublist.
 B = []
 while True:
     A = (input("Write something from your list or write 'stop()' to finish the list: ")).strip()
