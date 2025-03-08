@@ -1,4 +1,4 @@
-#Create Nested List: Create a new list that contains sublists, where each sublist contains a specified number of elements from the original list.
+#Get Unique Elements in Order: Given a list, create a new list that contains unique elements while maintaining the original order.
 B = []
 while True:
     A = (input("Write something from your list or write 'stop()' to finish the list: ")).strip()
@@ -16,7 +16,7 @@ else:
     if len(max(B)) == 0:
         print("your list is empty")
     else:
-        D = int(input("Type the number of elements in your sublists: "))
-        for i in range(0, len(B), D):
-            C.append(B[i:i+D])
+        for item in B:
+            if item not in C:
+                C.append(item)
         print(C)
