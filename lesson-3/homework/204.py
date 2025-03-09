@@ -14,6 +14,6 @@ else:
     else:
         C = tuple(B)
         print(f"""Here is your tuple: 
-              {B}""")
+              {C}""")
         D = input("Enter the element to check: ").strip()
         print(bool(D in C))

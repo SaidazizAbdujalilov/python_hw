@@ -14,7 +14,7 @@ else:
     else:
         C = tuple(B)
         print(f"""Here is your tuple: 
-              {B}""")
+              {C}""")
         D = input("Name the item you want to check: ")
         E = 0
         for item in C:

@@ -14,5 +14,5 @@ else:
     else:
         C = tuple(B)
         print(f"""Here is your tuple: 
-              {B}""")
+              {C}""")
         print(C[0])
